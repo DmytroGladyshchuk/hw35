@@ -1,0 +1,225 @@
+.header {
+    @extend %flex-all-settings;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .header-modal-btn-header {
+    display: none;
+  }
+  
+  .mobile-menu-contacts-item {
+    display: flex;
+  }
+  
+  .header-modal-contacts-link-number {
+    color: #2196f3;
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: 0.68px;
+  }
+  
+  .header-modal-contacts-link-mail {
+    margin-top: 32px;
+    color: #757575;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+  }
+  
+  .mobile-menu {
+    margin-bottom: 180px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 36px;
+  }
+  
+  .modal-header-social {
+    column-gap: 5px;
+    display: flex;
+    margin-top: 44px;
+  }
+  
+  .modal-header-social-item:not(:first-child) {
+    border-left: 1px solid #21212133;
+    padding-left: 5px;
+  }
+  
+  .modal-header-social-link {
+    color: #2196f3;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.36px;
+  }
+  
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  
+    &:hover svg {
+      fill: #2196f3;
+    }
+  
+    &:hover,
+    &:focus {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  .menu-container {
+    padding-top: 24px;
+    padding-left: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 796px;
+    background-color: #fff;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
+  
+  .menu-container .menu-toggle {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #fff;
+  }
+  
+  .header-modal-link {
+    color: #212121;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+  
+    &:hover {
+      color: #2196f3;
+    }
+  }
+  
+  .modal-header-svg {
+    fill: #212121;
+  }
+  
+  .header-logo {
+    color: $color-000;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+  }
+  
+  .header-logo-span {
+    color: $color-2196f3;
+  }
+  
+  .nav {
+    display: none;
+  }
+  
+  .header-items {
+    display: none;
+  }
+  
+  // modal-header
+  
+  // media-requests
+  
+  @media (min-width: 480px) {
+    .header-modal-div {
+      z-index: 999;
+      display: flex;
+    }
+  }
+  
+ 
+
+    .header-items {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      column-gap: 30px;
+      row-gap: 10px;
+      flex-direction: column;
+    }
+  
+    .active_header {
+      position: relative;
+      height: 80px;
+    }
+  
+    .active_header-portfolio::after,
+    .active_header-studio::after {
+      content: "";
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      width: 78px;
+      height: 4px;
+      border-radius: 2px;
+      background: $color-2196f3;
+      margin-top: 28px;
+    }
+  
+    .active_header-studio::after {
+      width: 48px;
+      left: -1px;
+    }
+  
+    .nav {
+      display: flex;
+      margin-left: 76px;
+      margin-right: 92px;
+    }
+  
+    .header-modal-div {
+      display: none;
+    }
+  
+    .nav-list {
+      display: flex;
+      align-items: center;
+      column-gap: 50px;
+    }
+  
+    .nav-item {
+      display: flex;
+      align-items: center;
+    }
+  
+    .nav-item-a {
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.28px;
+      color: $color-212121;
+  
+      &:hover {
+        color: $color-2196f3;
+        animation-fill-mode: forwards;
+        animation-duration: 250ms;
+        animation-name: bounceHover;
+        animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+  
+      &:hover svg {
+        fill: $color-2196f3;
+      }
+    }
+  
+    .header-item-a {
+      display: flex;
+      align-items: center;
+    }
+  
