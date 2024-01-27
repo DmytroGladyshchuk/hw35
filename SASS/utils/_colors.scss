@@ -1,135 +1,124 @@
+/* Цвета для повторяющихся элементов */
+:root {
+  --color-primary: #2196f3;
+  --color-dark: #212121;
+  --color-light: #fff;
+  --color-lighter: rgba(255, 255, 255, 0.6);
+  --color-accent: rgba(33, 150, 243, 1);
+  --color-muted: #757575;
+}
+
+/* Стили для .header-logo и .header-logo-span */
 .header-logo {
-    color: #2196f3;
-  }
+  color: var(--color-primary);
+}
+
+.header-logo-span {
+  color: var(--color-dark);
+}
+
+/* Стили для .nav-item-a */
+.nav-item-a {
+  color: var(--color-dark);
+}
+
+.nav-item-a:hover {
+  color: var(--color-primary);
+}
+
+.nav-item-a:hover svg {
+  fill: var(--color-primary);
+}
+
+/* Стили для .header-item-a */
+.header-item-a {
+  color: var(--color-muted);
+}
+
+.header-item-a:hover {
+  color: var(--color-primary);
+}
+
+.header-item-svg {
+  fill: rgba(117, 117, 117, 1);
+}
+
+/* Стили для .main-section */
+.main-section {
+  color: var(--color-light);
+}
+
+
+:root {
+  --color-text: #212121;
+  --color-text-light: #757575;
+  --color-accent: rgba(33, 150, 243, 1);
+  --color-background: #fff;
+}
+
+/* Общие стили для текста */
+.text-dark {
+  color: var(--color-text);
+}
+
+.text-light {
+  color: var(--color-text-light);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.text-dark:hover {
+  color: var(--color-accent);
+}
+
+/* Стили для различных элементов */
+.modal-label,
+.modal-label-a,
+.features-ul-li-p,
+.main-pictures-h2,
+.our-team-ul-li-h3,
+.our-team-ul-li-p,
+.regular-customers-h2,
+.second-list-item-h3,
+.second-list-item-p,
+.footer-h4,
+.footer-label,
+.footer-input,
+.footer-button {
+  @extend .text-light;
+}
+
+.modal-a,
+.picture-p,
+.button-settings,
+.overlay,
+.footer-logo {
+  @extend .text-accent;
+}
+
+.modal-h2,
+.features-ul-li-h3,
+.main-our-team-h2,
+.regular-customers-h2,
+.second-list-item-h3 {
+  @extend .text-dark;
+}
+
+.second-list-item-p,
+.footer-item-a2,
+.footer-input {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button-settings:hover,
+.overlay,
+.footer-logo-span,
+.footer-item-a1,
+.footer-button {
+  color: #fff;
+}
+
   
-  .header-logo-span {
-    color: #000;
-  }
-  
-  .nav-item-a {
-    color: #212121;
-  }
-  
-  .nav-item-a:hover {
-    color: #2196f3;
-  }
-  
-  .nav-item-a:hover svg {
-    fill: #2196f3;
-  }
-  
-  .header-item-a {
-    color: #757575;
-  }
-  
-  .header-item-a:hover {
-    color: #2196f3;
-  }
-  
-  .header-item-svg {
-    fill: rgba(117, 117, 117, 1);
-  }
-  
-  .main-section {
-    color: #fff;
-  }
-  
-  .modal-label {
-    color: #757575;
-  }
-  
-  .modal-label-a {
-    color: #757575;
-  }
-  
-  .modal-a {
-    color: rgba(33, 150, 243, 1);
-  }
-  
-  .modal-h2 {
-    color: #212121;
-  }
-  
-  .features-ul-li-h3 {
-    color: #212121;
-  }
-  
-  .features-ul-li-p {
-    color: #757575;
-  }
-  
-  .main-pictures-h2 {
-    color: #212121;
-  }
-  
-  .picture-p {
-    color: #fff;
-  }
-  
-  .main-our-team-h2 {
-    color: #212121;
-  }
-  
-  .our-team-ul-li-h3 {
-    color: #212121;
-  }
-  
-  .our-team-ul-li-p {
-    color: #757575;
-  }
-  
-  .regular-customers-h2 {
-    color: #212121;
-  }
-  
-  .button-settings {
-    color: #212121;
-  }
-  
-  .button-settings:hover {
-    color: #fff;
-  }
-  
-  .overlay {
-    color: #fff;
-  }
-  
-  .second-list-item-h3 {
-    color: #212121;
-  }
-  
-  .second-list-item-p {
-    color: #757575;
-  }
-  
-  .footer-logo {
-    color: #2196f3;
-  }
-  
-  .footer-logo-span {
-    color: #fff;
-  }
-  
-  .footer-item-a1 {
-    color: #fff;
-  }
-  
-  .footer-item-a2 {
-    color: rgba(255, 255, 255, 0.6);
-  }
-  
-  .footer-h4 {
-    color: #fff;
-  }
-  
-  .footer-label {
-    color: #fff;
-  }
-  
-  .footer-input {
-    color: rgba(255, 255, 255, 0.6);
-  }
-  
-  .footer-button {
-    color: #fff;
-  }
+ 
