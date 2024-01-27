@@ -1,143 +1,41 @@
-@keyframes modalFade {
-    0% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
+@keyframes forButton {
+  0% {
+    transform: translateX(0) scale(1);
   }
-  
-  @keyframes forItem {
-    0% {
-      transform: skewY(0);
-    }
-  
-    100% {
-      transform: skewY(10deg);
-      animation-play-state: paused;
-    }
+
+  100% {
+    transform: translateX(5px) scale(1.25);
   }
-  
-  @keyframes forButton {
-    0% {
-      transform: translateX(0);
-      transform: scale(1);
-    }
-  
-    100% {
-      transform: translateX(5px);
-      transform: scale(1.25);
-    }
+}
+@keyframes changeHeaderScaleHover {
+  0% {
+    transform: rotateX(0) perspective(360deg);
   }
-  
-  @keyframes bounceHover {
-    0% {
-      transform: translateX(0);
-    }
-  
-    100% {
-      transform: translateX(10px);
-    }
+
+  50% {
+    transform: rotateX(90deg) perspective(360deg);
   }
-  
-  @keyframes changeHeaderScaleHover {
-    0% {
-      transform: rotateX(0);
-      transform: perspective(360deg);
-    }
-  
-    50% {
-      transform: rotateX(90deg);
-      transform: perspective(360deg);
-    }
-  
-    100% {
-      transform: rotateX(0);
-      transform: perspective(360deg);
-    }
+
+  100% {
+    transform: rotateX(0) perspective(360deg);
   }
-  
-  @keyframes changeFooterScaleHover {
-    0% {
-      transform: scale(1);
-    }
-  
-    50% {
-      transform: scale(1.5);
-    }
-  
-    100% {
-      transform: scale(1);
-    }
+}
+@keyframes rotateRegularCustomers {
+  0%, 100% {
+    transform: rotate(0);
   }
-  
-  @keyframes rotateRegularCustomers {
-    0% {
-      transform: rotate(0);
-    }
-  
-    50% {
-      transform: rotate(90deg);
-    }
-  
-    100% {
-      transform: rotate(0);
-    }
+
+  50% {
+    transform: rotate(90deg);
   }
-  
-  @keyframes buttonClose {
-    0% {
-      transform: scale(1);
-    }
-  
-    50% {
-      transform: scale(0.75);
-    }
-  
-    100% {
-      transform: scale(1);
-    }
+}
+
+@keyframes focusModal {
+  0%, 100% {
+    transform: skewX(0);
   }
-  
-  @keyframes focusModal {
-    0% {
-      transform: skewX(0);
-    }
-  
-    50% {
-      transform: skewX(30deg);
-    }
-  
-    100% {
-      transform: skewX(0);
-    }
+
+  50% {
+    transform: skewX(30deg);
   }
-  
-  @keyframes hoverModal {
-    0% {
-      transform: scale(1);
-    }
-  
-    50% {
-      transform: scale(1.75);
-    }
-  
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  @keyframes translate {
-    0% {
-      transform: scale(1);
-    }
-  
-    50% {
-      transform: scale(0.5);
-    }
-  
-    100% {
-      transform: scale(1);
-    }
-  }
+}
